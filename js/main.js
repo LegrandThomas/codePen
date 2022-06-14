@@ -54,15 +54,11 @@ function affiche(){
     });
 
 
-    const boxes = document.querySelectorAll('textarea');
-
+        const boxes = document.querySelectorAll('textarea');
         boxes.forEach(box => {
         box.addEventListener('click', function handleClick(event) {
         let spinner=document.getElementById("infinity-loader");
-        spinner.className = "infinity-loader";
-      
-
-    
+        spinner.className = "infinity-loader";  
   });
 });
 
