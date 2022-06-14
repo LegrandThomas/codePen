@@ -1,5 +1,4 @@
 body{
-
     text-align: center;
 }
 
@@ -8,17 +7,23 @@ textarea{
     height: 250px;
     overflow: scroll;
     display: inline-block;
-    background: blanchedalmond;
+    background: rgb(57, 25, 130);
+    color: white;
+    border: 2px solid blue;
 }
 
 iframe{
     position: relative;
     width: 100%;
     height:200px;
-    overflow: scroll;   
+    overflow: scroll;  
+    background: rgb(110, 94, 149);
 }
 
 span{
    text-align:right;
 }
-#y{display: none;}
+
+#y{
+    display: none;
+}
