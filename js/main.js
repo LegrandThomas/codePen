@@ -62,11 +62,43 @@ function affiche(){
   });
 });
 
-  
+let color
+let defaultColor = "#0000ff";
+
+window.addEventListener("load", startup, false);
    
+function startup() {
+  color = document.querySelector("#color");
+  color.value = defaultColor;
+  color.addEventListener("input", updateFirst, false);
+  color.addEventListener("change", updateAll, false);
+  color.select();
+}
+function updateFirst(event) {
+  var p = document.querySelector("textarea");
+
+  if (p) {
+    p.style.color = event.target.value;
+  }
+}
+function updateAll(event) {
+  document.querySelectorAll("HTML").forEach(function(textarea) {
+    textarea.style.color = event.target.value;
+    
+  
+  });
+}
 
 
+let color1=document.getElementById('color1').addEventListener('click',function(){
+  let css=document.getElementById("CSS").value+="color: green";
+});
 
+let color2=document.getElementById('color2').addEventListener('click',function(){
+  let css=document.getElementById("CSS").value+="color: yellow";
+});
 
-
+let color3=document.getElementById('color3').addEventListener('click',function(){
+  let css=document.getElementById("CSS").value+="color: red";
+});
 
