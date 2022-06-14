@@ -11,19 +11,49 @@
 
 </head>
 
-<body>
-    <h1>Editor HTML/CSS/JS</h1>
+<body id="body">
+
+    <p><h1>Editor HTML/CSS/JS</h1></p>
+
+<p><button id="b">b</button> <button id="h">h1</button> <button id="a">a</button></p>
+
 
     <textarea id="HTML" placeholder="HTML" onkeyup ="affiche()" maxlength="200"></textarea>
     <textarea id="CSS" placeholder="CSS"></textarea>
     <textarea id="JS" placeholder="JAVASCRIPT"></textarea>
     <textarea id="y"></textarea>
+<section id="section">
+    <p class="titre2" id="titre2"> Live coding...</p>
+    <div class="infinity-loader" id="infinity-loader">
+        <div class="bg">
+          <!--background circles-->
+          <div class="left-bg"></div>
+          <div class="right-bg"></div>
+        </div>
+        <div class="fg">
+          <!--foreground circles-->
+          <div class="top-left-rect">
+            <div></div>
+          </div>
+          <div class="bottom-right-rect">
+            <div></div>
+          </div>
+          <div class="top-right-rect">
+            <div></div>
+          </div>
+          <div class="bottom-left-rect">
+            <div></div>
+          </div>
+        </div>
+      </div>
 
-    <h2> Live coding...</h2>
     <iframe id="code"></iframe>
     <span id="compteur">0</span><span>/</span><span id="nbremaxi">200</span>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <p><progress id="progressBar" max="100" value="0">  </progress></p>
 
+
+    <script type="text/javascript" src="./js/main.js"></script>
+</section>
 </body>
 
 
